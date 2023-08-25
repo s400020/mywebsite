@@ -1,0 +1,42 @@
+<html>
+<head>
+<title> The content of your website goes here  </title>
+</head>
+<body style="background-color: cyan;">
+
+
+
+
+<div class="row">
+<div class="image-container"></div><img id="donut1" src="img/donut_01.png" width="200" height="200"/></div>
+<div class="image-container"></div><img id="donut2" src="img/donut_02.png" width="200" height="200"/></div>
+<div class="image-container"></div><img id="donut3" src="img/donut_03.png" width="200" height="200"/></div>
+</div>
+
+<div class="row">
+<div class="image-container"></div><img id="donut4" src="img/donut_01.png" width="200" height="200"/></div>
+<div class="image-container"></div><img id="donut5" src="img/donut_02.png" width="200" height="200"/></div>
+<div class="image-container"></div><img id="donut6" src="img/donut_03.png" width="200" height="200"/></div>
+</div>
+
+<div class="row">
+<div class="image-container"></div><img id="donut1" src="img/donut_01.png" width="200" height="200"/></div>
+<div class="image-container"></div><img id="donut2" src="img/donut_02.png" width="200" height="200"/></div>
+<div class="image-container"></div><img id="donut3" src="img/donut_03.png" width="200" height="200"/></div>
+</div>
+
+<script>
+var sound1 = new buzz.sound("sound/glitch1.mp3");
+        var sound2 = new buzz.sound("sound/glitch2.mp3");
+        var sound3 = new buzz.sound("sound/glitch3.mp3");
+        
+        window.onload = function() {
+            document.getElementById('donut1').addEventListener('click', function () {sound1.play(); });  
+            document.getElementById('donut2').addEventListener('click', function () {sound2.play(); });
+            document.getElementById('donut3').addEventListener('click', function () {sound3.play(); });
+        }
+    </script>   
+    
+</body>
+
+</html>
